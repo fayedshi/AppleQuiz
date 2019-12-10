@@ -1,1 +1,1 @@
-# cosmos
+# add proxy for cognizant network, you may remove it while you run in your own envrionment
