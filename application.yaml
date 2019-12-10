@@ -1,0 +1,32 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:h2:mem:test
+    driver-class-name: org.h2.Driver
+    DB_CLOSE_ON_EXIT: FALSE
+    username: sa
+    password: sa
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8 
+  jpa:
+    database: h2
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+  h2:
+    console:
+      path: /h2-console
+      enabled: true
+      settings:
+        web-allow-others=true
+
+map_api_url:
+  baidu:    http://api.map.baidu.com/geocoding/v3/?&output=json&ak=apiKey&address=inputAddr&city=myCity
+  autoNavi: https://restapi.amap.com/v3/geocode/geo?output=JSON&address=inputAddr&key=apiKey&city=myCity
+app_key:
+  baidu:    XyGj3EGP712Vno5fnxQblliwV6Z0SicG
+  autoNavi: 8d9a793d9e2b17058f10a356e185b27b
