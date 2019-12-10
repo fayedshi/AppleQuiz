@@ -54,8 +54,8 @@ public class EMapService {
 				locs.add(new Retailer(bdCoords[0], bdCoords[1], addr, "baidu"));
 				locs.add(new Retailer(autoCoords[0], autoCoords[1], addr, "autoNavi"));
 				// System.out.println("locs: " + locs);
-				locRepo.save(locs);
 			}
+			locRepo.save(locs);
 			return locs;
 		}
 	}
